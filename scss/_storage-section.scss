@@ -1,0 +1,114 @@
+.storage-section {
+	padding: 2rem 2.125rem;
+	border-radius: 0.5rem;
+	background-color: $clr-neut-DarkBlue;
+	position: relative;
+	max-width: 35rem;
+	min-width: 18rem;
+
+	@media (min-width: 48rem) {
+		flex: 1;
+		max-height: 9.375rem;
+		margin-top: 3.5rem;
+	}
+
+	p {
+		font-weight: 400;
+		color: $clr-neut-PaleBlue;
+		letter-spacing: 0.02rem;
+		margin-bottom: 1rem;
+	}
+	strong {
+		color: #fff;
+	}
+
+	.progress-bar-outer {
+		background-color: $clr-neut-VeryDarkBlue;
+		height: 1.125rem;
+		width: 100%;
+		margin-bottom: 0.5rem;
+		border-radius: 1rem;
+		padding: 0.2rem 0;
+		display: flex;
+	}
+	.progress-bar-inner {
+		background: linear-gradient(
+			to right,
+			hsl(6, 100%, 80%),
+			hsl(335, 100%, 65%)
+		);
+		border-radius: 1rem;
+		height: 0.8125rem;
+		width: 75%;
+		justify-self: center;
+		position: relative;
+	}
+	.progress-bar-dot {
+		position: absolute;
+		height: 0.65rem;
+		width: 0.65rem;
+		background-color: #fff;
+		border-radius: 100%;
+		right: 0;
+	}
+	.min-max-range {
+		display: flex;
+		font-size: 0.72rem;
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 1.125rem;
+
+		li {
+			color: $clr-neut-PaleBlue;
+			list-style: none;
+		}
+	}
+
+	.storage-left {
+		text-transform: uppercase;
+		border-radius: 0.5rem;
+		position: absolute;
+		padding: 0.75rem 1.6125rem;
+		justify-items: center;
+		display: flex;
+		bottom: -25%;
+		right: 21%;
+		align-items: center;
+		background-color: #fff;
+
+		@media (min-width: 48rem) {
+			display: flex;
+			bottom: 80%;
+			right: 7%;
+
+			&:after {
+				content: "";
+				height: 2rem;
+				width: 2rem;
+				background-color: transparent;
+				position: inherit;
+				right: 0;
+				bottom: -20%;
+				border: 1rem solid #fff;
+				border-top-color: transparent;
+				border-right-color: #fff;
+				border-bottom-color: transparent;
+				border-left-color: transparent;
+			}
+		}
+
+		p {
+			color: $clr-neut-GrayishBlue;
+			font-weight: bold;
+			font-size: 0.8125rem;
+			margin: 0.3rem 0 0 0.5rem;
+		}
+		strong {
+			font-weight: 700;
+			font-size: 2.5rem;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
