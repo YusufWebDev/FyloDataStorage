@@ -23,7 +23,7 @@ body {
   margin: 7.875rem auto;
   padding: 0 1.625rem;
   color: #fff;
-  background-image: url("../images/bg-mobile.png");
+  background-image: url("./images/bg-mobile.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,7 +31,7 @@ body {
 }
 @media (min-width: 48rem) {
   body {
-    background-image: url("../images/bg-desktop.png");
+    background-image: url("./images/bg-desktop.png");
     background-position: bottom;
     background-attachment: fixed;
     background-repeat: no-repeat;
