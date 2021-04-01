@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
   padding: 7.875rem 1.625rem;
   color: #fff;
-  background-image: url("./images/bg-mobile.png");
+  background-image: url("../images/bg-mobile.png");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
