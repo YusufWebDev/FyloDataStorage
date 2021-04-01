@@ -1,0 +1,39 @@
+.logo-section {
+	padding: 2.5rem;
+	border-radius: 0.5rem 6rem 0.5rem 0.5rem;
+	background-color: $clr-neut-DarkBlue;
+	max-width: 35rem;
+	min-width: 18rem;
+
+	@media (min-width: 48rem) {
+		flex: 0.5;
+	}
+
+	img {
+		margin-bottom: 1.875rem;
+	}
+	.icons {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: flex-end;
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			list-style: none;
+			background-color: $clr-neut-VeryDarkBlue;
+			border-radius: 0.5rem;
+			margin-right: 0.875rem;
+			padding: 0.875rem;
+
+			img {
+				margin: 0;
+				height: 1.2rem;
+				width: 1.15rem;
+			}
+		}
+	}
+}
